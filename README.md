@@ -44,7 +44,7 @@ Begin pagina
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Exposities
-<img src="images/Info.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/Barcelona.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
