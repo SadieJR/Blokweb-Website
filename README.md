@@ -49,7 +49,6 @@ Exposities
 <img src="images/Book.png" width="375px" alt="ticket booken">
 <img src="images/Info.png" width="375px" alt="expositie informatie">
 <img src="images/Moco Masters.png" width="375px" alt="verhaal over de moco masters">
-<img src="images/Story.png" width="375px" alt="stories">
 
 </details>
 
