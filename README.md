@@ -40,12 +40,17 @@ https://mocomuseum.nl/over-het-museum/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Begin pagina 
-<img src="images/MocoWebsite.jpg" width="100%" alt="Begin van de pagina">
+<img src="images/MocoWebsite.jpg" width="375px" alt="Begin van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Exposities
 <img src="images/Barcelona.png" width="375px" alt="omschrijving van de pagina">
- 
+<img src="images/Begin.png" width="375px" alt="begin van de pagina">
+<img src="images/Book.png" width="375px" alt="ticket booken">
+<img src="images/Info.png" width="375px" alt="expositie informatie">
+<img src="images/Moco Masters.png" width="375px" alt="verhaal over de moco masters">
+<img src="images/Story.png" width="375px" alt="stories">
+
 </details>
 
 
