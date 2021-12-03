@@ -22,7 +22,7 @@ Sadie Roberts
 Blauw
 
 #### Je focus:
-Surface plane
+Responsive
  
 </details>
 
