@@ -20,46 +20,49 @@ body {
 
 /************* HEADER *************/
 
+/************* MOCO-LOGO *************/
+
 header h1 {
   width: 3em;
   margin: 0 0 0 0;
+
 }
 
 header h1 :hover {
   opacity: 50%;
+  transition: 0.5s;
 }
 
-header ul {
+/************* LANGUAGES-LIST *************/
+
+header section ul li a {
+
+  margin-right: 0.7em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+header section ul {
   display: flex;
   justify-content: center;
 
   margin: 0.5em;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 
   text-decoration: none;
   background-color: white;
   text-transform: uppercase;
+  list-style-type: none;
 
-}
-
-header a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background:hotpink;
-  transition: width .3s;
-}
-
-header a:hover::after {
-  width: 25%;
-  
 }
 
 header ul li {
   list-style-type: none;
-  width: 5em;
+  width: 3em;
+  font-size: 12px;
+  flex-shrink: 0;
+
 }
 
 header a {
@@ -69,17 +72,16 @@ header a {
 }
 
 header a:hover {
- font-weight: 600;
+  font-weight: 600;
   border-bottom: solid;
   border-color: hotpink;
   padding: 0 0 0.5em 0;
-  
+
 }
 
 /************* PRIJZEN & OPENINGSTIJDEN *************/
 
-section:nth-of-type(1) {
-  background-color: hotpink;
+main section:nth-of-type(1) {
   height: 15em;
 
   display: flex;
@@ -90,12 +92,14 @@ section:nth-of-type(1) {
   background-size: 1em 1em;
 }
 
-section:nth-of-type(1):hover {
+main section:nth-of-type(1):hover {
   background-color: pink;
 }
 
-section:nth-of-type(1) h2 {
+main section:nth-of-type(1) h2 {
   background-color: white;
+  color: hotpink;
+  font-size: 1.5 em;
 
   height: 10em;
   width: 10em;
@@ -108,13 +112,13 @@ section:nth-of-type(1) h2 {
   text-align: center;
 }
 
-section:nth-of-type(1):hover h2 {
-  background-color: gray;
+main section:nth-of-type(1):hover h2 {
+  background-color: hotpink;
 }
 
 /************* KOOP TICKETS *************/
 
-section:nth-of-type(2) {
+main section:nth-of-type(2) {
   background-color: hotpink;
   height: 15em;
 
@@ -145,10 +149,13 @@ section:nth-of-type(2) {
 
 .witRondje h2 {
   font-size: 3em;
+  margin-bottom: 0.1em;
 }
 
 .witRondje h3 {
-  font-size: 1.5em;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 1em;
 }
 
 .witRondje:hover {
@@ -159,14 +166,14 @@ section:nth-of-type(2) {
 
 }
 
-section:nth-of-type(2) h2 {
+main section:nth-of-type(2) h2 {
   text-align: center;
 
 }
 
 
 /************* EXPOSITIES *************/
-section:nth-of-type(3) {
+main section:nth-of-type(3) {
   background-color: hotpink;
   height: 15em;
 
@@ -175,10 +182,11 @@ section:nth-of-type(3) {
   justify-content: center;
   align-items: center;
 }
-section:nth-of-type(3) img{
+
+main section:nth-of-type(3) img {
   width: 100%;
   max-width: 10em;
-  
+
 }
 
 
