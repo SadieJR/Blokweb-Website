@@ -63,7 +63,7 @@ Exposities
 <img src="images/Indeling-Website-Moco.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/hamburgermenu.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/Hamburgermenu.png" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
 
