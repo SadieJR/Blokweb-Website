@@ -45,8 +45,6 @@ Begin pagina
 #### Screenshot(s) van de tweede pagina (small screen):
 Exposities
 <img src="images/Barcelona.png" width="375px" alt="omschrijving van de pagina">
-<img src="images/Begin.png" width="375px" alt="begin van de pagina">
-<img src="images/Book.png" width="375px" alt="ticket booken">
 <img src="images/Info.png" width="375px" alt="expositie informatie">
 <img src="images/Moco Masters.png" width="375px" alt="verhaal over de moco masters">
 
@@ -63,10 +61,11 @@ Exposities
 <img src="images/Indeling-Website-Moco.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/Hamburgermenu.png" width="375px" alt="breakdown van een dynamisch deel">
+
+<img src="images/Menu.indeling.png" width="375px" alt="breakdownschets van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
