@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+  padding: 0;
 
 }
 
@@ -23,7 +24,7 @@ body {
 /************* MOCO-LOGO *************/
 
 header h1 {
-  width: 3em;
+  width: 2em;
   margin: 0 0 0 0;
 
 }
@@ -33,20 +34,153 @@ header h1 :hover {
   transition: 0.5s;
 }
 
-/************* LANGUAGES-LIST *************/
 
-header section ul li a {
+/************* HAMBURGERMENU BUTTON *************/
+header nav button {
+  position: relative;
 
-  margin-right: 0.7em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  width: 3.5em;
+  height: 3.2em;
+
+  bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 20%;
+
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  z-index: 200
 }
 
-header section ul {
+header nav button span {
+
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: hotpink;
+  position: absolute;
+  bottom: 8px;
+
+
+  /*bottom: 80px;*/
+  transition: .3s;
+}
+
+header nav button span:nth-of-type(1) {
+  transform: translatey(-5px);
+}
+
+header nav button span:nth-of-type(3) {
+  transform: translatey(5px);
+}
+
+nav.toonMenu button span {
+  background-color:hotpink;
+}
+
+nav.toonMenu button span:nth-of-type(1) {
+  transform: rotate(45deg);
+}
+
+nav.toonMenu button span:nth-of-type(2) {
+  opacity: 0;
+}
+
+nav.toonMenu button span:nth-of-type(3) {
+  transform: rotate(-45deg);
+}
+
+/********* MENU BINNEN HAMBURGERMENU *********/
+
+header nav {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  position: absolute;
+  right: 0;
+  z-index: 100;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 4em 0 0;
+  background-color: white;
+  list-style: none;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+
+  transform: translateX(-100%);
+  transition: .5s;
+  z-index: 1;
+}
+
+header nav.toonMenu ul {
+  transform: translatex(0%);
+}
+
+header nav ul li{
+  flex-direction: column;
+  text-align: center;
+  margin: 1.5em;
+  padding: 0;
+  list-style: none;               
+}
+
+
+header nav ul li a{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: hotpink;
+  font-size: 15px;
+  text-decoration: none;
+  outline: none;
+  letter-spacing: .1em;
+}
+
+header nav ul li a::after{
+  content:"";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 2px;
+  width: 100%;
+  margin-bottom: -7px;
+
+  background-color: hotpink;
+
+  transition: .3s;
+  transform: scaleX(0);
+}
+
+header nav ul li a:hover::after {
+  transform:scaleX(1);
+}
+
+
+/************* LANGUAGES-LIST *************/
+
+header section:nth-of-type(1) ul li {
+  list-style-type: none;
+  width: 3em;
+  font-size: 12px;
+  flex-shrink: 0;
+
+}
+header section:nth-of-type(1) ul {
   display: flex;
   justify-content: center;
 
-  margin: 0.5em;
+  margin-bottom: 1em;
+  margin-top: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 
@@ -56,36 +190,49 @@ header section ul {
   list-style-type: none;
 
 }
-
-header ul li {
-  list-style-type: none;
-  width: 3em;
-  font-size: 12px;
-  flex-shrink: 0;
-
-}
-
-header a {
+header section:nth-of-type(1) ul li a {
+  position: relative;
+  margin-right: 0.7em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   color: black;
   font-size: 12px;
   text-decoration: none;
+  outline: none;
+}
+header section:nth-of-type(1) ul li a::after {
+  content:"";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 2px;
+  width: 100%;
+  margin-bottom: -8px;
+
+  background-color: hotpink;
+
+  transition: .3s;
+  transform: scaleX(0);
 }
 
-header a:hover {
-  font-weight: 600;
-  border-bottom: solid;
-  border-color: hotpink;
-  padding: 0 0 0.5em 0;
+header section:nth-of-type(1) ul li a:hover::after {
+  transform:scaleX(1);
 
 }
 
 /************* PRIJZEN & OPENINGSTIJDEN *************/
 
-main section:nth-of-type(1) {
-  height: 15em;
 
+main section:nth-of-type(1) {
   display: flex;
   justify-content: center;
+
+  height: 15em;
+  width: 100%;
+
   align-items: center;
 
   background-image: radial-gradient(red 50%, pink 50%);
@@ -93,7 +240,7 @@ main section:nth-of-type(1) {
 }
 
 main section:nth-of-type(1):hover {
-  background-color: pink;
+  background-color: white;
 }
 
 main section:nth-of-type(1) h2 {
@@ -114,23 +261,26 @@ main section:nth-of-type(1) h2 {
 
 main section:nth-of-type(1):hover h2 {
   background-color: hotpink;
+  color: black;
 }
 
 /************* KOOP TICKETS *************/
 
 main section:nth-of-type(2) {
   background-color: hotpink;
-  height: 15em;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
+  height: 15em;
+  width: 100%;
+
 }
 
 .witRondje {
   height: 15em;
-  width: 50em;
+  width: 100%;
   padding: 0;
   /*border-radius: 50%;*/
   background-image: radial-gradient(circle closest-side, white 100%, transparent 100%);
@@ -171,24 +321,67 @@ main section:nth-of-type(2) h2 {
 
 }
 
-
 /************* EXPOSITIES *************/
-main section:nth-of-type(3) {
-  background-color: hotpink;
-  height: 15em;
-
+main section:nth-of-type(3) a {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content:center;
+
+  height: 15em;
+  width: 100%;
+
+  background-image:url(../images/New_Exhibition_Dots.jpeg);
+ background-repeat: no-repeat;
+  
+}
+
+main section:nth-of-type(3) a:hover{
+  background-image: url(../images/DiamondRoom.jpeg);
+
+  
+}
+/*main section:nth-of-type(3) img:nth-of-type(1){
+  width: 100%;
+  height: 15em;
+  opacity: 50%;
+  margin: 0;
+  
+}*/
+
+main section:nth-of-type(3) img:nth-of-type(2){
+  display: none;
+}
+
+main section:nth-of-type(3) a h2{
+  position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  main section:nth-of-type(3) a h3{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+
+  }
+
+/************* STORIES *************/
+
+main section:nth-of-type(4){
+  background-color: hotpink;
+  position: relative;
+  width: 100%;
+  height: 15em;
+  margin: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-
-main section:nth-of-type(3) img {
-  width: 100%;
-  max-width: 10em;
-
+main section:nth-of-type(4) h2{
+  margin: 0;
+  
 }
-
-
-
-/************* STORIES *************/

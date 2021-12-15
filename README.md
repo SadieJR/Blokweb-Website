@@ -79,27 +79,27 @@ Exposities
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+De breakdownschets is goed gelukt en klopt. Ik weet de HTML opbouw van de pagina en heb deze ook bijna volledig uitgewerkt. Ik heb erg veel moeite met het beginnen met CSS, omdat mijn website veel gebruik maakt van vormen en beweging. Bij het vragen om hulp ben ik goed opweg geholpen/gekomen.  
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1:      | student 2          | student 3     | student 4                    |
-|    MARIJN       | TESSA              | DANA          | SADIE                        |
-| -------------   | --------           | ---------     | -------------                |
-|  HTML video     | Nog geen vragen    | meerdere      |  Rondje maken in een section |
-| achtergrond img |                    | button styling|                              |
-|                 | ...                | ...           | ...                          |
+| student 1       | student 2          | student 3              | student 4                    |
+|    MARIJN       | TESSA              | DANA                   | SADIE                        |
+| -------------   | --------           | ---------              | -------------                |
+| HTML video      | Nog geen vragen    | meerdere button styling|  Rondje maken in een section |
+| Achtergrond img |                    | slideshow afbeeldingen |  Gradient achtergrond met kleine rondjes |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Met behulp van CSS moet ik de cirkel maken, met een class.
+- Class: "witRondje".
+- Background-image: radial-gradient(circle closest-side, white 100%, transparent 100%);
+- Alles sections zijn een link bij mij.
+- Roze achtergrond met rode kleinere stippen: background-image: radial-gradient(red 50%, pink 50%);
+  background-size: 1em 1em;
 
 </details>
 
@@ -113,26 +113,26 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb verschillende dingen uitgeprobeerd met CSS, maar loop al snel tegen kleine foutjes aan waardoor ik niet verder kom. Voorafgaand de meeting had ik nog geen vragen, omdat ik nog niet heel ver was. Tijdens de meeting heb ik toch nog wat dingen kunnen vragen, bijvoorbeeld over de language linkjes waar ik veel aanhad en vervolgens verder kon met waar ik gebleven was. 
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| student 1           | student 2              | student 3                       | student 4              |
+| MARIJN              | TESSA                  | DANA                            | SADIE                  |
+| geen vragen vooraf  | Afbeelding sticky      | Files verwijderen van github    | "/" tussen een lijstje |
+|                     | Slideshow afbeeldingen |                                 | lijn onder een link    |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Slash moet in de html in de list als volgt: '<li><a href="#">EN</a>/</li>'
+- Met CSS stylen
+- Border-bottom
+- :after & :hover gebruiken
+- 
 
 </details>
 
@@ -146,30 +146,64 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+Test 1. Screenreader
+- Tijdens het screenreaden vond ik het persoonlijk zelf aan de ene kant duidelijk, maar aan de andere kant ook niet duidelijk. Je krijgt soms verschillende HTML elementen te horen en niet iedereen weet wat dat is. Aan de andere kant wordt weer duidelijk aangegeven waar je nu bent en wat je vervolgens moet doen. 
+- Het aanpassen van de stem is belangrijk en is op eigen voorkeur. 
+- De structuur van de Headings is voor een screenreader misschien niet altijd logisch, maar voor de indeling wel. 
+- De linkjes zijn zelf al best duidelijk beschrijven. 
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+Test 2. Muis en toetsenbord
+- Het is niet bij alles duidelijk of het klikbaar is
+- Vaak zijn de hover states "omgekeerd": ipv dat er een lijntje te voor schijn komt, gaat die juist weg als je over een linkje bijvoorbeeld heen hovert. 
+- De elementen worden in een logische volgorde geslecteerd. 
+- Niet alle states zijn uitgewerkt. 
+- Alles kan wel geselecteerd en bediend worden met het toetsenbord. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Test 3. Diverse beperkingen
+- Visuele beperkingen:
+- het is moeilijker om kleine dingen te lezen en lastige om kleuren te onderscheiden als er veel van de zelfde kleuren worden gebruikt of als er weinig contrast is. Bij de site van Moco musuem  wordt er veel roze gebruikt en is dus soms moeilijker te onderscheiden. Wel wordt er gebruik gemaakt van zwart wat dus wel weer een contrast creeert. 
+- De site maakt veel gebruik van grote titels wat wel fijn is, de kleinere teksten zijn moeilijker te lezen van een visuele beperking. 
+- Slechte motoriek:
+- het is soms lastig bepaalde handelingen uit te voeren. 
+- over het algemeen is het opzich wel makkelijk om door de website heen te gaan. 
+- Met typen doe je er wat langer over, maar je hoeft niks te typen, je hebt vaak keuze uit een drop-down menu. 
+- Concentratie problemen 
+- Door het gebruik van de grote titel is het opzich niet lastig om er snel achter te komen waar de pagina over gaat. Soms is het wel even zoeken waar je nou heen moet als je een specifiek iets zoekt. Doordat er opzich wel wat beweging te zien is in de website, kan de gebruiker zich misschhien minder goed concentreren. 
+- Op de meeste pagina's staat niet veel tekst, behalve als je meer informatie wilt lezen bij exposities. 
+- Spasme/parkinson
+- Over het algemeen is het al best lastig om te bewegen met spasme of parkinson.
+- Op de site heb je niet perse veel kleine buttons en linkjes en zijn over het algemeen wel groot genoeg om "mis te schieten". Bijvoorbeeld de blokken die te zien zijn bij het begin zijn volledig klikbaar en je hoeft dus niet op een bepaald deel perse te klikken. 
+- Bij het boeken van tickets kunnen denk is de meeste problemen plaats vinden, omdat je daar wel wat kleinere elementen hebt, maar ook hier vind ik dat deze genoeg ruimte nemen. 
 
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Screenreader
+- Misshien content meer onderelkaar laten gaan.
+- Alle elementen een 'uitgebreidde' betekenis of omschrijving geven, zoals buttons met een toevoegende beschrijvende teskt in css die niet perse zichtbaar hoeft te zijn op de site (aria-hidden).
+- Omschrijvende labels
+- Tekst op buttons
+- HTML structuur op orde. 
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Muis en toetsenbord
+- 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+
+#### Diverse beperkingen
+- Groter kleurcontrast (tekst en achtergrond)
+- Ander kleur gebruik
+- Grotere lettertypes
+- Geen tekst op afbeeldingen
+- tekst in kleurvlakken
+- Visueel duidelijk maken waar de gebruiker zich bevindt. 
+
+
+#### Concentratie problemen
+- Minder bewegende elementen of minder groot. 
+- Geen teskt of extra elementen als schaduw of border om afbeeldingen heen.
+
 
 </details>
 
@@ -189,11 +223,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| student 1      | student 2          | student 3    | student 4                              |
+| ---            | ---                | DANA          | SADIE                                  |
+| dit bespreken  | en dit             | Form/formulier   | Website responsive maken               |
+| en dat ook nog | dit als er tijd is | nog een punt | sections naast elkaar als breder wordt |
+| ...            | ...                | ...          | ...                                    |
 
 
 ### Verslag van meeting
