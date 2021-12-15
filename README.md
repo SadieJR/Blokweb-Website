@@ -63,6 +63,8 @@ Exposities
 ### dynamisch deel (bijv menu): 
 <img src="images/Hamburgermenu.png" width="375px" alt="breakdown van een dynamisch deel">
 
+<img src="images/menu.indeling.png" width="375px" alt="breakdown van een dynamisch deel">
+
 ### wellicht nog een dynamisch deel (bijv filter): 
 
 </details>
