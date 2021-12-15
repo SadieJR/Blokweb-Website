@@ -63,7 +63,7 @@ Exposities
 ### dynamisch deel (bijv menu): 
 <img src="images/Hamburgermenu.png" width="375px" alt="breakdown van een dynamisch deel">
 
-<img src="images/menu.indeling.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/Menu.indeling.png" width="375px" alt="breakdownschets van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
 
@@ -85,11 +85,12 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| student 1:      | student 2          | student 3     | student 4                    |
+|    MARIJN       | TESSA              | DANA          | SADIE                        |
+| -------------   | --------           | ---------     | -------------                |
+|  HTML video     | Nog geen vragen    | meerdere      |  Rondje maken in een section |
+| achtergrond img |                    | button styling|                              |
+|                 | ...                | ...           | ...                          |
 
 
 ### Verslag van meeting
