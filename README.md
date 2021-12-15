@@ -118,9 +118,9 @@ Ik heb verschillende dingen uitgeprobeerd met CSS, maar loop al snel tegen klein
 
 ### Agenda voor meeting
 samen met je groepje opstellen
-
-| student 1           | student 2              | student 3                       | student 4              |
-| MARIJN              | TESSA                  | DANA                            | SADIE                  |
+ 
+| student 1           | student 2              | student 3                       | student 4              |            
+| MARIJN              | TESSA                  | DANA                            |SADIE                   |
 | geen vragen vooraf  | Afbeelding sticky      | Files verwijderen van github    | "/" tussen een lijstje |
 |                     | Slideshow afbeeldingen |                                 | lijn onder een link    |
 
@@ -128,16 +128,12 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- Slash moet in de html in de list als volgt: '<li><a href="#">EN</a>/</li>'
-- Met CSS stylen
-- Border-bottom
-- :after & :hover gebruiken
-- 
+- Slash moet in de html in de list.
+- Met CSS stylen.
+- Border-bottom.
+- :after & :hover gebruiken.
 
 </details>
-
-
-
 
 
 ## Toegankelijkheidstest (week 4)
@@ -188,7 +184,7 @@ Test 3. Diverse beperkingen
 
 
 #### Muis en toetsenbord
-- 
+ 
 
 
 #### Diverse beperkingen
