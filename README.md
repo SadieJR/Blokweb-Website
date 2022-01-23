@@ -181,7 +181,7 @@ Hier zie je het verschil tussen de bestaande website en mijn beetje aangepaste d
 
 <img src="basiswebsite/images/tekstshadow.png" width="375px" alt="Begin van de pagina">
 
-Door tekst shadow toe te voegen is de tekst in het wit beter te zien en springt dit er meer uit. De achtergrond is druk, maar de shadow zorgt ervoor de de tekst beter te lezen is. 
+Door tekst shadow toe te voegen is de tekst in het wit beter te zien en springt dit er meer uit. De achtergrond is druk, maar de shadow zorgt ervoor de de tekst beter te lezen is. Ook de grootte van de font is groter gemaakt, zo is het nog makkelijker leesbaar. 
 
 
 #### Screenreader
