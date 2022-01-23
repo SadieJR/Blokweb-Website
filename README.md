@@ -22,7 +22,7 @@ Sadie Roberts
 Blauw
 
 #### Je focus:
-Responsive
+Surface Plane
  
 </details>
 
@@ -171,8 +171,17 @@ Test 3. Diverse beperkingen
 - Op de site heb je niet perse veel kleine buttons en linkjes en zijn over het algemeen wel groot genoeg om "mis te schieten". Bijvoorbeeld de blokken die te zien zijn bij het begin zijn volledig klikbaar en je hoeft dus niet op een bepaald deel perse te klikken. 
 - Bij het boeken van tickets kunnen denk is de meeste problemen plaats vinden, omdat je daar wel wat kleinere elementen hebt, maar ook hier vind ik dat deze genoeg ruimte nemen. 
 
+<img src="basiswebsite/images/mococonstrast.png" width="375px" alt="Begin van de pagina">
 
+<img src="basiswebsite/images/contrasten.png" width="375px" alt="Begin van de pagina">
 
+Hier zie je het verschil tussen de bestaande website en mijn beetje aangepaste design. Moco maakt gebruik van verschillende tinten roze. Met iemand met een visuele beperking kan dit erg lastig te onderscheiden zijn, daarom heb ik er voor gekozen om grotere contrasten met lichte en donkere kleuren te gebruiken. 
+
+<img src="basiswebsite/images/before.png" width="375px" alt="Begin van de pagina">
+
+<img src="basiswebsite/images/tekstshadow.png" width="375px" alt="Begin van de pagina">
+
+Door tekst shadow toe te voegen is de tekst in het wit beter te zien en springt dit er meer uit. De achtergrond is druk, maar de shadow zorgt ervoor de de tekst beter te lezen is. 
 
 
 #### Screenreader
