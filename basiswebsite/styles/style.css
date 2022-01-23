@@ -3,27 +3,48 @@
   box-sizing: border-box;
 }
 
-/*:root {
-  --main-color;
-  --background-color:;
-  --background-highlight-color:;
+:root {
+  --main-color: black;
+  --background-color: white;
+  --accent-color: hotpink;
+  --accent-background-color: hotpink;
 
-  --p-color:#fff;
-  --p-background-color:dodgerblue;
-*/
+  --circles-background-color: pink;
+  --smallcircles-color: red;
+  --bigcircles-color: white;
 
+  --h1-pinkcolor: hotpink;
+  --h1-blackcolor: black;
 
-body {
-  margin: 0;
+  --text-shadow1: rgb(77, 27, 143);
+  --text-shadow2: black;
+  --text-shadow3: midnightblue;
+
+  --link-color: black;
+  --link-active-color: darkblue;
+
+  --p-color: black;
+  --p-background-color: white;
+
+  --footer-movingbars-color: rgb(240, 232, 232);
 
 }
 
-/************* HEADER *************/
+body {
+  margin: 0;
+  font-family: 'Libre Caslon Text', serif;
+  background-color: var(--background-color);
+  color: var(--main-color);
+
+
+}
+
+/************ HEADER ************/
 
 /************* MOCO-LOGO *************/
 
-header h1 {
-  width: 3em;
+/* header h1 {
+  width: 2em;
   margin: 0 0 0 0;
 
 }
@@ -31,86 +52,141 @@ header h1 {
 header h1 :hover {
   opacity: 50%;
   transition: 0.5s;
-}
+} */
 
-/************* HAMBURGERMENU *************/
-header button{
+
+/************* HAMBURGERMENU BUTTON *************/
+/* header nav button {
   position: relative;
 
-  width:4em;
-  height:4em;
+  width: 3.5em;
+  height: 3.2em;
 
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  left: 90%;
-  
-}
-
-header button span {
-
-  display:block;
-  width:50%;
-  height:1px;
-  background-color:black;
-
-  position: absolute;
-  
-
-  transition: .3s;
-}
- header button span:nth-of-type(1) {
-    transform:translatey(-5px);
-  }
-  
-  header button span:nth-of-type(2) {
-  }
-  
-  header button span:nth-of-type(3) {
-    transform:translatey(5px);
-  }
-  
-  nav.menuOpen button span {
-    background-color:red;
-  }
-  
-  nav.menuOpen button span:nth-of-type(1) {
-    transform:rotate(45deg);
-  }
-  
-  nav.menuOpen button span:nth-of-type(2) {
-    opacity:0;
-  }
-  
-  nav.menuOpen button span:nth-of-type(3) {
-    transform:rotate(-45deg);
-  }
-
-/************* LANGUAGES-LIST *************/
-
-header section ul li a {
-
-  margin-right: 0.7em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-}
-
-header section ul {
+  bottom: 70px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  right: 20%;
 
-  margin: 0.5em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-
-  text-decoration: none;
-  background-color: white;
-  text-transform: uppercase;
-  list-style-type: none;
-
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  z-index: 200
 }
 
-header ul li {
+header nav button span {
+
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: hotpink;
+  position: absolute;
+  bottom: 8px;
+  
+  transition: .3s;
+}
+
+header nav button span:nth-of-type(1) {
+  transform: translatey(-5px);
+}
+
+header nav button span:nth-of-type(3) {
+  transform: translatey(5px);
+}
+
+nav.toonMenu button span {
+  background-color:hotpink;
+}
+
+nav.toonMenu button span:nth-of-type(1) {
+  transform: rotate(45deg);
+}
+
+nav.toonMenu button span:nth-of-type(2) {
+  opacity: 0;
+}
+
+nav.toonMenu button span:nth-of-type(3) {
+  transform: rotate(-45deg);
+} */
+
+/********* MENU BINNEN HAMBURGERMENU *********/
+
+/* header nav {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  position: absolute;
+  right: 0;
+  z-index: 100;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 4em 0 0;
+  background-color: white;
+  list-style: none;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+
+  transform: translateX(-100%);
+  transition: .5s;
+  z-index: 1;
+}
+
+header nav.toonMenu ul {
+  transform: translatex(0%);
+}
+
+header nav ul li{
+  flex-direction: column;
+  text-align: center;
+  margin: 1.5em;
+  padding: 0;
+  list-style: none;               
+}
+
+
+header nav ul li a{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: hotpink;
+  font-size: 15px;
+  text-decoration: none;
+  outline: none;
+  letter-spacing: .1em;
+}
+
+header nav ul li a::after{
+  content:"";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 2px;
+  width: 100%;
+  margin-bottom: -7px;
+
+  background-color: hotpink;
+
+  transition: .3s;
+  transform: scaleX(0);
+}
+
+header nav ul li a:hover::after {
+  transform:scaleX(1);
+} */
+
+
+/************* LANGUAGES-LIST *****************/
+
+header section:nth-of-type(1) ul li {
   list-style-type: none;
   width: 3em;
   font-size: 12px;
@@ -118,61 +194,88 @@ header ul li {
 
 }
 
-header a::after{
-content:"";
-
-position: absolute;
-left: 0;
-right: 0;
-bottom:0;
-
-height: 1px;
-
-background-color: hotpink;
-
-transition: .3s;
-transform: scaleX(0);
-}
-
-header a:hover::after{
-  transform: scalex(1);
-
-}
-
-header a {
-  color: black;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-header a:hover {
-  font-weight: 600;
-  border-bottom: solid;
-  border-color: hotpink;
-  padding: 0 0 0.5em 0;
-
-}
-
-/************* PRIJZEN & OPENINGSTIJDEN *************/
-
-main section:nth-of-type(1) {
-  height: 15em;
-
+header section:nth-of-type(1) ul {
   display: flex;
   justify-content: center;
+
+  margin-bottom: 1em;
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+
+  text-decoration: none;
+  background-color: var(--background-color);
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+header section:nth-of-type(1) ul li a:focus {
+  outline: solid .2em var(--link-active-color);
+}
+
+header section:nth-of-type(1) ul li a:visited {
+  font-weight: 800;
+}
+
+header section:nth-of-type(1) ul li a {
+  position: relative;
+  margin-right: 0.7em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: var(--p-color);
+  font-size: 12px;
+  text-decoration: none;
+  outline: none;
+}
+
+header section:nth-of-type(1) ul li a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 2px;
+  width: 100%;
+  margin-bottom: -8px;
+
+  background-color: var(--accent-background-color);
+
+  transition: .3s;
+  transform: scaleX(0);
+}
+
+header section:nth-of-type(1) ul li a:hover::after {
+  transform: scaleX(1);
+
+}
+
+/************* PRIJZEN & OPENINGSTIJDEN ****************/
+
+
+main section:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+
+  height: 15em;
+  width: 100%;
+
   align-items: center;
 
-  background-image: radial-gradient(red 50%, pink 50%);
+  background-image: radial-gradient(var(--smallcircles-color) 50%, var(--circles-background-color) 50%);
   background-size: 1em 1em;
+  cursor: pointer;
 }
 
 main section:nth-of-type(1):hover {
-  background-color: pink;
+  background-color: var(--background-color);
+  background-image: none;
 }
 
 main section:nth-of-type(1) h2 {
-  background-color: white;
-  color: hotpink;
+  background-color: var(--background-color);
+  color: var(--accent-background-color);
   font-size: 1.5 em;
 
   height: 10em;
@@ -187,27 +290,30 @@ main section:nth-of-type(1) h2 {
 }
 
 main section:nth-of-type(1):hover h2 {
-  background-color: hotpink;
+  background-color: none;
+  color: var(--h1-pinkcolor);
 }
 
-/************* KOOP TICKETS *************/
+/************* KOOP TICKETS ****************/
 
 main section:nth-of-type(2) {
-  background-color: hotpink;
-  height: 15em;
+  background-color: var(--accent-background-color);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
+  height: 15em;
+  width: 100%;
+  cursor: pointer;
 }
 
 .witRondje {
   height: 15em;
-  width: 50em;
+  width: 100%;
   padding: 0;
   /*border-radius: 50%;*/
-  background-image: radial-gradient(circle closest-side, white 100%, transparent 100%);
+  background-image: radial-gradient(circle closest-side, var(--bigcircles-color) 100%, transparent 100%);
 
   display: flex;
   flex-direction: column;
@@ -219,22 +325,23 @@ main section:nth-of-type(2) {
 
 .witRondje h3, .witRondje h2 {
   margin: 0 0 0.25em;
+  font-family: 'Yeseva One', cursive;
 }
 
 .witRondje h2 {
-  font-size: 3em;
+  font-size: 2.8em;
   margin-bottom: 0.1em;
 }
 
 .witRondje h3 {
-  font-family: 'Montserrat';
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 1em;
 }
 
 .witRondje:hover {
-  background-color: hotpink;
-  background-image: radial-gradient(circle closest-side, hotpink 100%, hotpink 100%);
+  background-color: var(--accent-background-color);
+  background-image: radial-gradient(circle closest-side, var(--accent-color) 100%, var(--accent-color) 100%);
   color: transparent;
   transition: 0.5s;
 
@@ -245,24 +352,191 @@ main section:nth-of-type(2) h2 {
 
 }
 
-
 /************* EXPOSITIES *************/
-main section:nth-of-type(3) {
-  background-color: hotpink;
-  height: 15em;
 
+main section:nth-of-type(3) a {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+
+  height: 15em;
+  width: 100%;
+
+  background-image: url(../images/New_Exhibition_Dots.jpeg);
+  background-repeat: no-repeat;
+  transition: .3s;
+  background-position: center center;
+  cursor: pointer;
+
+  color: var(--link-color);
+
+}
+
+main section:nth-of-type(3) a:hover {
+  background-image: url(../images/DiamondRoom.jpeg);
+  height: 15em;
+  width: 100%;
+  color: white;
+  text-shadow:
+    .30em .25em .3em var(--text-shadow1),
+    .30em .25em .3em var(--text-shadow2),
+    .30em .25em .3em var(--text-shadow3);
+}
+
+main section:nth-of-type(3) h2 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 2.8em;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main section:nth-of-type(3) h3 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/**************** STORIES ****************/
+
+main section:nth-of-type(4) a {
+  background-color: black;
+  font-size: 3em;
+  color: var(--accent-color);
+  font-family: 'Poppins', sans-serif;
+  ;
+  position: relative;
+  width: 100%;
+  height: 5em;
+  margin: 0;
+  padding: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-main section:nth-of-type(3) img {
-  width: 100%;
-  max-width: 10em;
+  cursor: pointer;
 
 }
 
+main section:nth-of-type(4) h2 {
+  margin: 0;
+}
 
+main section:nth-of-type(4):hover a {
+  background: repeating-linear-gradient(-55deg,
+      rgb(255, 168, 212),
+      rgb(255, 168, 212) 8px,
+      rgb(218, 83, 166) 8px,
+      rgb(218, 83, 166) 12px);
+  color: var(--p-background-color);
+}
 
-/************* STORIES *************/
+/**************** WORD EEN MOCO MEMBER ****************/
+footer a {
+  position: relative;
+}
+
+footer a h2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0em;
+  margin: 0;
+  padding: .5em;
+  font-size: 1.2em;
+  background-color: var(--accent-background-color);
+  color: var(--background-color);
+  width: 14em;
+  height: 2.5em;
+  z-index: 1;
+}
+
+footer a p {
+  margin: 0;
+  padding: .5em;
+  height: 2.5em;
+  font-size: 1.2em;
+  padding: .5em;
+  background-color: var(--footer-movingbars-color);
+
+  clear: both;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+
+  -moz-animation: my-animation 60s linear infinite;
+  -webkit-animation: my-animation 60s linear infinite;
+  animation: my-animation 90s linear infinite;
+}
+
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(1%);
+  }
+
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+footer a p :nth-of-type(2) {
+  margin: 0;
+  padding: .8em;
+  font-size: 1.2em;
+  padding: .5em;
+  background-color: var(--footer-movingbars-color);
+
+  clear: both;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+
+  -moz-animation: my-animation 60s linear infinite;
+  -webkit-animation: my-animation 60s linear infinite;
+  animation: my-animation 90s linear infinite;
+}
+
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(3%);
+  }
+
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+footer a p :nth-of-type(3) {
+  margin: 0;
+  padding: .8em;
+  font-size: 1.2em;
+  padding: .5em;
+  background-color: var(--footer-movingbars-color);
+
+  clear: both;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+
+  -moz-animation: my-animation 60s linear infinite;
+  -webkit-animation: my-animation 60s linear infinite;
+  animation: my-animation 90s linear infinite;
+}
+
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(3%);
+  }
+
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
