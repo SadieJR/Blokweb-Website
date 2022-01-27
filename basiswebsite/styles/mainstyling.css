@@ -16,7 +16,6 @@
     --header-link-focus-color: darkblue;
     --header-hover-color: hotpink;
 
-    --header-p-color: black;
     --header-p-background-color: white;
 }
 
@@ -25,9 +24,25 @@
 
 /************* MOCO-LOGO *************/
 
+header {
+    background-color: var(--header-background-color);
+    position: relative;
+}
+
+header nav {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    position: absolute;
+ 
+    top: 1px;;
+    z-index: 100;   
+}
+
 header h1 {
     width: 2em;
     margin: 0 0 0 0;
+    right:17em;
+    
 }
 
 header h1 :hover {
@@ -38,12 +53,12 @@ header h1 :hover {
 /************* HAMBURGERMENU BUTTON *************/
 header nav button {
     position: relative;
+    top: 1px;
 
     width: 3.5em;
     height: 3.2em;
 
-    bottom: 70px;
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     right: 20%;
@@ -91,20 +106,8 @@ nav.toonMenu button span:nth-of-type(3) {
 
 /********* MENU BINNEN HAMBURGERMENU *********/
 
-header {
-    background-color: var(--header-background-color);
-}
-
-header nav {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    position: absolute;
-    right: 0;
-    z-index: 100;
-}
-
 header nav ul {
-    margin: 0;
+    margin:0;
     padding: 4em 0 0;
     background-color: var(--header-background-color);
     list-style: none;
@@ -175,6 +178,7 @@ header section:nth-of-type(1) ul li {
     font-size: 12px;
     flex-shrink: 0;
     padding-bottom: 2em;
+    color: var(--header-p-color);
 
 }
 

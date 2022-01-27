@@ -456,87 +456,45 @@ footer a h2 {
   z-index: 1;
 }
 
+footer a div {
+overflow: hidden;
+width: 100%;
+background-color: var(--footer-movingbars-color);
+}
+
+
 footer a p {
   margin: 0;
   padding: .5em;
   height: 2.5em;
   font-size: 1.2em;
-  padding: .5em;
-  background-color: var(--footer-movingbars-color);
 
-  clear: both;
-  overflow: hidden;
-  display: inline-block;
+  display: inline-block; 
   white-space: nowrap;
-  direction: ltr;
 
-  -moz-animation: my-animation 60s linear infinite;
-  -webkit-animation: my-animation 60s linear infinite;
-  animation: my-animation 90s linear infinite;
+  animation: my-animation 70s linear infinite;
 }
 
-@-webkit-keyframes my-animation {
-  from {
-    -webkit-transform: translateX(1%);
-  }
-
+@keyframes my-animation {
   to {
-    -webkit-transform: translateX(-100%);
+    transform: translateX(calc(-100% + 100vw));
   }
 }
 
-footer a p :nth-of-type(2) {
-  margin: 0;
-  padding: .8em;
-  font-size: 1.2em;
-  padding: .5em;
-  background-color: var(--footer-movingbars-color);
+/* footer a p:nth-of-type(1){ 
+animation-duration: 70s;
+} die voor hierboven staat dan voor de eerste p */
 
-  clear: both;
-  overflow: hidden;
-  display: inline-block;
-  white-space: nowrap;
-  direction: ltr;
+footer a p:nth-of-type(2){
+animation-delay: -7s;
+animation-duration: 30s;
+/* animation-direction: reverse; */
 
-  -moz-animation: my-animation 60s linear infinite;
-  -webkit-animation: my-animation 60s linear infinite;
-  animation: my-animation 90s linear infinite;
 }
 
-@-webkit-keyframes my-animation {
-  from {
-    -webkit-transform: translateX(3%);
-  }
+footer a p:nth-of-type(3){
+animation-delay: -14s;
+animation-duration: 90s;
 
-  to {
-    -webkit-transform: translateX(-100%);
-  }
-}
 
-footer a p :nth-of-type(3) {
-  margin: 0;
-  padding: .8em;
-  font-size: 1.2em;
-  padding: .5em;
-  background-color: var(--footer-movingbars-color);
-
-  clear: both;
-  overflow: hidden;
-  display: inline-block;
-  white-space: nowrap;
-  direction: ltr;
-
-  -moz-animation: my-animation 60s linear infinite;
-  -webkit-animation: my-animation 60s linear infinite;
-  animation: my-animation 90s linear infinite;
-}
-
-@-webkit-keyframes my-animation {
-  from {
-    -webkit-transform: translateX(3%);
-  }
-
-  to {
-    -webkit-transform: translateX(-100%);
-  }
 }
