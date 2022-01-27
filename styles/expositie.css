@@ -29,6 +29,15 @@ body {
 
 /*********** Moco Museum Barcelona **********/
 
+main section:nth-of-type(1){
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2em;
+}
+
+
 main section:nth-of-type(1) img:nth-of-type(1) {
 
   display: flex;
@@ -36,6 +45,9 @@ main section:nth-of-type(1) img:nth-of-type(1) {
 
   height: auto;
   max-width: 100%;
+
+  background-color: var(--background-color);
+  margin-top:1.5em;
 }
 
 main section:nth-of-type(1) h1 {
@@ -60,56 +72,95 @@ main section:nth-of-type(1) h2 {
   margin: 0;
 }
 
-main section:nth-of-type(1) img:nth-of-type(1) {
-  display: flex;
-  justify-content: center;
-
-  height: 100%;
-  width: auto;
-  margin: 1em 0 0 3em;
-  padding-right: 5.5em;
-
-  align-items: center;
-  position: relative;
-
-  background-color: var(--background-color);
-}
-
 main section:nth-of-type(1) p {
   font-family: 'montserrat', sans-serif;
   color: var(--p-color);
   line-height: 1.3;
   max-width: 70em;
-  margin-bottom: 30px;
-  padding: 0 2em 0 3em;
+  margin-bottom: 30px; 
 }
 
-main section:nth-of-type(1) a {
+main section:nth-of-type(1) a{
+  position:relative;
+  
+  color:var(--link-color);
+  
+  text-decoration:none;
+  outline:none;
+
+  max-width: 100%;
+  height: auto;
+
   font-family: 'montserrat', sans-serif;
-  color: var(--link-color);
   font-weight: bold;
-  text-align: center;
-  width: 100%;
-  padding: 20px 0px 20px 0px;
-  margin: 0 0 0 13em;
 
+  color: var(--link-color);
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin:0 auto 0 auto;
+  text-align: center; 
+  width: fit-content; 
 }
 
+main section:nth-of-type(1) a::before {
+  content:"";
+  background-color:currentcolor;
+  
+  position:absolute;
+  
+  left:.5em;
+  right:.5em;
+  bottom:-.5em;
+  
+  height:.2em;
+  
+  border-radius:.125em;
+  
+  transform:scalex(0);
+  transition:all .2s ease;
+}
+
+main section:nth-of-type(1) a:hover::before {
+  transform:scalex(1);
+}
+
+main section:nth-of-type(1)a:visited {
+  color:var(--link-visited-color);
+}
+
+main section:nth-of-type(1) a:hover{
+  font-size: 21px;
+  color: white;
+  transition:all .3s ease;
+  background-color:black;
+} 
+      
 /********************** the New Future ***********************/
 
-main section:nth-of-type(2) img:nth-of-type(1) {
+main section:nth-of-type(2){
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2em;
+}
 
+main section:nth-of-type(2) img:nth-of-type(1) {
   display: flex;
   justify-content: center;
 
   height: auto;
   max-width: 100%;
+
+  background-color: var(--background-color);
+  margin-top:1.5em;
 }
 
-main section:nth-of-type(2) h1 {
+ main section:nth-of-type(2) h1 {
   display: flex;
   justify-content: center;
-  padding-top: 1.5em;
+  padding-top: 10px;
   font-family: 'Yeseva One', cursive;
   font-size: 2em;
   background-color: var(--background-color);
@@ -117,43 +168,16 @@ main section:nth-of-type(2) h1 {
   margin: 0;
 }
 
-main section:nth-of-type(2) h2:nth-of-type(1) {
+main section:nth-of-type(2) h2 {
   display: flex;
   justify-content: center;
+  text-align: center;
   padding-top: 10px;
   font-family: 'Yeseva One', cursive;
   font-size: 16px;
   background-color: var(--background-color);
   color: var(--p-color);
-  width: auto;
-  margin-left: 3em;
-}
-
-
-main section:nth-of-type(2) h2:nth-of-type(2) {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  font-family: 'Yeseva One', cursive;
-  font-size: 16px;
-  background-color: var(--background-color);
-  color: var(--titles-color);
-  margin: 0;
-}
-
-main section:nth-of-type(2) img:nth-of-type(1) {
-  display: flex;
-  justify-content: center;
-
-  height: 100%;
-  width: auto;
-  margin: 1em 0 0 3em;
-  padding-right: 5.5em;
-
-  align-items: center;
-  position: relative;
-
-  background-color: var(--background-color);
+  margin: 0 1em 0 1em;
 }
 
 main section:nth-of-type(2) p {
@@ -161,22 +185,75 @@ main section:nth-of-type(2) p {
   color: var(--p-color);
   line-height: 1.3;
   max-width: 70em;
-  margin-bottom: 30px;
-  padding: 0 2em 0 3em;
+  margin-bottom: 30px; 
 }
 
-main section:nth-of-type(2) a {
+main section:nth-of-type(2) a{
+  position:relative;
+  
+  color:var(--link-color);
+  
+  text-decoration:none;
+  outline:none;
+
+  max-width: 100%;
+  height: auto;
+
   font-family: 'montserrat', sans-serif;
-  color: var(--link-color);
   font-weight: bold;
-  text-align: center;
-  width: 100%;
-  padding: 20px 0px 20px 0px;
-  margin: 0 0 0 13em;
 
+  color: var(--link-color);
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin:0 auto 0 auto;
+  text-align: center; 
+  width: fit-content; 
 }
+
+main section:nth-of-type(2) a::before {
+  content:"";
+  background-color:currentcolor;
+  
+  position:absolute;
+  
+  left:.5em;
+  right:.5em;
+  bottom:-.5em;
+  
+  height:.2em;
+  
+  border-radius:.125em;
+  
+  transform:scalex(0);
+  transition:all .2s ease;
+}
+
+main section:nth-of-type(2) a:hover::before {
+  transform:scalex(1);
+}
+
+main section:nth-of-type(2)a:visited {
+  color:var(--link-visited-color);
+}
+
+main section:nth-of-type(2) a:hover{
+  font-size: 21px;
+  color: white;
+  transition:all .3s ease;
+  background-color:black;
+} 
 
 /******************* THE KID ***********************/
+
+main section:nth-of-type(3){
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2em;
+}
+
 
 main section:nth-of-type(3) img:nth-of-type(1) {
 
@@ -185,6 +262,9 @@ main section:nth-of-type(3) img:nth-of-type(1) {
 
   height: auto;
   max-width: 100%;
+
+  background-color: var(--background-color);
+  margin-top:1.5em;
 }
 
 main section:nth-of-type(3) h1 {
@@ -194,7 +274,7 @@ main section:nth-of-type(3) h1 {
   font-family: 'Yeseva One', cursive;
   font-size: 2em;
   background-color: var(--background-color);
-  color: var(--titles-color);
+  color: var(--p-color);
   margin: 0;
 }
 
@@ -205,23 +285,8 @@ main section:nth-of-type(3) h2 {
   font-family: 'Yeseva One', cursive;
   font-size: 16px;
   background-color: var(--background-color);
-  color: var(--titles-color);
+  color: var(--p-color);
   margin: 0;
-}
-
-main section:nth-of-type(3) img:nth-of-type(1) {
-  display: flex;
-  justify-content: center;
-
-  height: 100%;
-  width: auto;
-  margin: 1em 0 0 3em;
-  padding-right: 5.5em;
-
-  align-items: center;
-  position: relative;
-
-  background-color: var(--background-color);
 }
 
 main section:nth-of-type(3) p {
@@ -229,33 +294,61 @@ main section:nth-of-type(3) p {
   color: var(--p-color);
   line-height: 1.3;
   max-width: 70em;
-  margin-bottom: 30px;
-  padding: 0 2em 0 3em;
+  margin-bottom: 20px; 
 }
 
-main section:nth-of-type(3) a {
+main section:nth-of-type(3) a{
+  position:relative;
+  
+  color:var(--link-color);
+  
+  text-decoration:none;
+  outline:none;
+
+  max-width: 100%;
+  height: auto;
+
   font-family: 'montserrat', sans-serif;
-  color: var(--link-color);
   font-weight: bold;
-  text-align: center;
-  width: 100%;
-  padding: 20px 0 40px 0;
-  margin: 0 0 0 13em;
 
-}
-
-main section:nth-of-type(1) a:hover {
+  color: var(--link-color);
+  border-radius: 8px;
   text-decoration: none;
+  padding: 5px 10px;
+  margin:0 auto 0 auto;
+  text-align: center; 
+  width: fit-content; 
 }
 
-main section:nth-of-type(2) a:hover {
-  text-decoration: none;
+main section:nth-of-type(3) a::before {
+  content:"";
+  background-color:currentcolor;
+  
+  position:absolute;
+  
+  left:.5em;
+  right:.5em;
+  bottom:-.5em;
+  
+  height:.2em;
+  
+  border-radius:.125em;
+  
+  transform:scalex(0);
+  transition:all .2s ease;
 }
 
-main section:nth-of-type(3) a:hover {
-  text-decoration: none;
+main section:nth-of-type(3) a:hover::before {
+  transform:scalex(1);
 }
 
-main section:nth-of-type(1) a:focus {
-  border: var(--link-focus-color);
+main section:nth-of-type(3)a:visited {
+  color:var(--link-visited-color);
 }
+
+main section:nth-of-type(3) a:hover{
+  font-size: 21px;
+  color: white;
+  transition:all .3s ease;
+  background-color:black;
+} 
