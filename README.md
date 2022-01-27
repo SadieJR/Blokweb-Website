@@ -171,7 +171,7 @@ Test 3. Diverse beperkingen
 - Op de site heb je niet perse veel kleine buttons en linkjes en zijn over het algemeen wel groot genoeg om "mis te schieten". Bijvoorbeeld de blokken die te zien zijn bij het begin zijn volledig klikbaar en je hoeft dus niet op een bepaald deel perse te klikken. 
 - Bij het boeken van tickets kunnen denk is de meeste problemen plaats vinden, omdat je daar wel wat kleinere elementen hebt, maar ook hier vind ik dat deze genoeg ruimte nemen. 
 
-<img src="basiswebsite/images/mococonstrast.png" width="375px" alt="Begin van de pagina">
+<img src="basiswebsite/images/mococontrast.png" width="375px" alt="Begin van de pagina">
 
 <img src="basiswebsite/images/contrasten.png" width="375px" alt="Begin van de pagina">
 
@@ -222,15 +222,15 @@ Door tekst shadow toe te voegen is de tekst in het wit beter te zien en springt 
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik was goed opweg met de eerste pagina. De blokken begonnen zich te vormen en de gewenste effecten met :hover ontstonden. Ik moet een begin gaan maken met de tweede pagina.
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4                              |
-| ---            | ---                | DANA          | SADIE                                  |
-| dit bespreken  | en dit             | Form/formulier   | Website responsive maken               |
+| MARIJN         | TESSA      | DANA         |SADIE                                                |
+| video invoegen  | afbeelding meebewegen| formulier en verschillende tekst vakken
 | en dat ook nog | dit als er tijd is | nog een punt | sections naast elkaar als breder wordt |
 | ...            | ...                | ...          | ...                                    |
 
@@ -238,10 +238,9 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Wat er klinkbaar is klikbaar maken (links)
+- Aria labels, aangeven wat is iets (voor screenreading oplossing)
+- Headings neerzetten en dan die doorzichtig maken 
 
 </details>
 
@@ -255,11 +254,15 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Website bijna compleet, maar nog niet volledig. Sommige klikbare elementen zijn nog niet klikbaar. En tweede pagina bevat niks speciaals. Nav button naar boven brengen, hamburger menu op tweede pagina werkend maken, logo als home button laten werken, extra toevoeging tweede pagina.  
 
 ### Screenshot(s)
-
-hier screenshot(s) van je eindresultaat
+<img src="basiswebsite/images/eind1.png" width="375px" alt="eindresultaat">
+<img src="basiswebsite/images/eind2.png" width="375px" alt="eindresultaat">
+<img src="basiswebsite/images/eind3.png" width="375px" alt="eindresultaat">
+<img src="basiswebsite/images/eind4.png" width="375px" alt="eindresultaat">
+<img src="basiswebsite/images/eind5.png" width="375px" alt="eindresultaat">
+<img src="basiswebsite/images/eind6.png" width="375px" alt="eindresultaat">
 
 </details>
 
@@ -274,8 +277,13 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+2. https://css-tricks.com/snippets/css/complete-guide-grid/ 
+3. https://css-tricks.com/stripes-css/ 
+4. https://www.w3schools.com/css/css3_animations.asp 
+5. DLO
+6. https://www.w3schools.com/css/css_intro.asp  
+7. https://fonts.google.com/  
+8. https://blog.hubspot.com/website/scrolling-text-css 
 
 </details>
